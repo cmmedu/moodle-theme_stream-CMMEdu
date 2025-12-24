@@ -24,6 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+global $OUTPUT;
+
 $themesettings = get_config('theme_stream');
 
 $templatecontext['year'] = date('Y');
@@ -35,3 +37,17 @@ $templatecontext['linkedinurl'] = $themesettings->linkedinurl;
 $templatecontext['twitterurl'] = $themesettings->twitterurl;
 $templatecontext['leftcolumn'] = format_text($themesettings->leftcolumn, FORMAT_HTML);
 $templatecontext['centercolumn'] = format_text($themesettings->centercolumn, FORMAT_HTML);
+
+// MatCon Footer Logos URLs
+$templatecontext['logofcfmurl'] = isset($themesettings->logofcfmurl) ? $themesettings->logofcfmurl : 'https://ingenieria.uchile.cl';
+$templatecontext['logocmmeduurl'] = isset($themesettings->logocmmeduurl) ? $themesettings->logocmmeduurl : 'https://cmmedu.uchile.cl';
+$templatecontext['logomineducurl'] = isset($themesettings->logomineducurl) ? $themesettings->logomineducurl : 'https://www.mineduc.cl';
+$templatecontext['logoreactivacionurl'] = isset($themesettings->logoreactivacionurl) ? $themesettings->logoreactivacionurl : 'https://reactivacioneducativa.mineduc.cl/';
+$templatecontext['logounescurl'] = isset($themesettings->logounescurl) ? $themesettings->logounescurl : 'https://www.unesco.org';
+
+// MatCon Footer Logos Images URLs
+$templatecontext['logofcfmimg'] = $OUTPUT->image_url('matcon/logo_fcfm', 'theme');
+$templatecontext['logocmmeduimg'] = $OUTPUT->image_url('matcon/logo_cmmedu', 'theme');
+$templatecontext['logomineducimg'] = $OUTPUT->image_url('matcon/logo_mineduc', 'theme');
+$templatecontext['logoreactivacionimg'] = $OUTPUT->image_url('matcon/logo_reactivacion', 'theme');
+$templatecontext['logounescimg'] = $OUTPUT->image_url('matcon/logo_unesco', 'theme');

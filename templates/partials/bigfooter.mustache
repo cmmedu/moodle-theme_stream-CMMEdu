@@ -40,66 +40,38 @@
     }
 }}
     <!-- Grid container -->
-  <div class="container-fluid stream-footer footer-dark text-light">
-    <!--Grid row-->
-    <div class="row m-0">
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-4">
-        {{{leftcolumn}}}
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-4">
-        {{{centercolumn}}}
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-4">
-        {{# output.has_popover_links }}
-            <div class="footer-section p-3 support-column">
-                {{# output.page_doc_link }}
-                    <div>{{{ output.page_doc_link }}}</div>
-                {{/ output.page_doc_link }}
-
-                {{# output.services_support_link }}
-                    <div>{{{ output.services_support_link }}}</div>
-                {{/ output.services_support_link }}
-
-                {{# output.supportemail }}
-                    <div>{{{ output.supportemail }}}</div>
-                {{/ output.supportemail }}
-                <div class="tool_usertours-resettourcontainer">
-                </div>
-            </div>
-        {{/ output.has_popover_links }}
-
-
-      </div>
-      <!--Grid column-->
-    </div>
-    <!--Grid row-->
-    <div class="row container-fluid m-0">
-      <div class="col-lg-12 text-center socialmedia">
-        {{#facebookurl}}
-        <a href="{{facebookurl}}" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        {{/facebookurl}}
-        {{#instagramurl}}
-        <a href="{{instagramurl}}" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        {{/instagramurl}}
-        {{#twitterurl}}
-        <a href="{{twitterurl}}" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-        {{/twitterurl}}
-        {{#youtubeurl}}
-        <a href="{{youtubeurl}}" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
-        {{/youtubeurl}}
-        {{#linkedinurl}}
-        <a href="{{linkedinurl}}" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-        {{/linkedinurl}}
-        {{#pinteresturl}}
-        <a href="{{pinteresturl}}" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
-        {{/pinteresturl}}
+  <div class="matcon-footer-logos">
+    <div class="container mx-auto px-2 py-6">
+      <div class="matcon-footer-logos-grid">
+        <div class="matcon-footer-logo-item">
+          <a href="{{logofcfmurl}}" target="_blank" rel="noopener noreferrer" class="matcon-footer-logo-link">
+            <img src="{{logofcfmimg}}" alt="FCFM Logo" class="matcon-footer-logo matcon-footer-logo-fcfm" />
+          </a>
+        </div>
+        
+        <div class="matcon-footer-logo-item">
+          <a href="{{logocmmeduurl}}" target="_blank" rel="noopener noreferrer" class="matcon-footer-logo-link">
+            <img src="{{logocmmeduimg}}" alt="CMMEdu Logo" class="matcon-footer-logo matcon-footer-logo-cmmedu" />
+          </a>
+        </div>
+        
+        <div class="matcon-footer-logo-item">
+          <a href="{{logomineducurl}}" target="_blank" rel="noopener noreferrer" class="matcon-footer-logo-link">
+            <img src="{{logomineducimg}}" alt="Mineduc Logo" class="matcon-footer-logo matcon-footer-logo-mineduc" />
+          </a>
+        </div>
+        
+        <div class="matcon-footer-logo-item">
+          <a href="{{logoreactivacionurl}}" target="_blank" rel="noopener noreferrer" class="matcon-footer-logo-link">
+            <img src="{{logoreactivacionimg}}" alt="Reactivación Logo" class="matcon-footer-logo matcon-footer-logo-reactivacion" />
+          </a>
+        </div>
+        
+        <div class="matcon-footer-logo-item">
+          <a href="{{logounescurl}}" target="_blank" rel="noopener noreferrer" class="matcon-footer-logo-link">
+            <img src="{{logounescimg}}" alt="UNESCO Logo" class="matcon-footer-logo matcon-footer-logo-unesco" />
+          </a>
+        </div>
       </div>
     </div>
   </div>

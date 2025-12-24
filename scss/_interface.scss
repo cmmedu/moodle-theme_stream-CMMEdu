@@ -44,6 +44,110 @@ table {
 }
 // Footer.
 footer {
+    &.matcon-footer {
+        border-top: 16px solid $color-matcon-red;
+    }
+
+    .matcon-footer-logos {
+        .container {
+            max-width: 1160px;
+        }
+
+        .matcon-footer-logos-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+
+            @include media-breakpoint-up(md) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        .matcon-footer-logo-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .matcon-footer-logo-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .matcon-footer-logo {
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .matcon-footer-logo-fcfm {
+            height: 4rem;
+            @include media-breakpoint-up(sm) {
+                height: 5rem;
+            }
+        }
+
+        .matcon-footer-logo-cmmedu {
+            height: 3rem;
+            @include media-breakpoint-up(sm) {
+                height: 4rem;
+            }
+        }
+
+        .matcon-footer-logo-mineduc {
+            height: 4rem;
+            @include media-breakpoint-up(sm) {
+                height: 5rem;
+            }
+        }
+
+        .matcon-footer-logo-reactivacion {
+            height: 4rem;
+            @include media-breakpoint-up(sm) {
+                height: 5rem;
+            }
+        }
+
+        .matcon-footer-logo-unesco {
+            height: 4rem;
+            @include media-breakpoint-up(sm) {
+                height: 5rem;
+            }
+        }
+    }
+
+    .matcon-footer-credits {
+        background-color: $color-matcon-green;
+        padding: 1rem 0;
+        width: 100%;
+
+        .container {
+            max-width: 1160px;
+        }
+
+        p {
+            font-size: 0.75rem;
+            line-height: 1.5;
+            @include media-breakpoint-up(md) {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
     .footer-credits {
         background-color: $primary;
         font-size: 0.85rem;
