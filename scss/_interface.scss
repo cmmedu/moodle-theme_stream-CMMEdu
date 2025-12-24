@@ -58,8 +58,8 @@ footer {
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
             align-items: center;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
+            /*margin-top: 1rem;*/
+            /*margin-bottom: 2rem;*/
 
             @include media-breakpoint-up(md) {
                 grid-template-columns: repeat(5, 1fr);
@@ -149,7 +149,7 @@ footer {
     }
 
     .footer-credits {
-        background-color: $primary;
+        /*background-color: $primary;*/
         font-size: 0.85rem;
         a {
             color: $white;
