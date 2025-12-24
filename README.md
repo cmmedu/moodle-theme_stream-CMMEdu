@@ -1,6 +1,6 @@
-# Moodle Stream Theme
+# Moodle Stream-MatCon Theme
 
-Stream is a **Boost child Moodle 4+ theme** with some added features. And it's based on some excellent themes out there (check acknowledgements)
+Stream matcon version is a **Boost child Moodle 4+ theme** with some added features. And it's based on some excellent themes out there (check acknowledgements)
 This is my first take on Moodle dev so bear with me. Experiment it with care and let me know what you think.
 
 

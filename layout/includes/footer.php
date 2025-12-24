@@ -51,3 +51,6 @@ $templatecontext['logocmmeduimg'] = $OUTPUT->image_url('matcon/logo_cmmedu', 'th
 $templatecontext['logomineducimg'] = $OUTPUT->image_url('matcon/logo_mineduc', 'theme');
 $templatecontext['logoreactivacionimg'] = $OUTPUT->image_url('matcon/logo_reactivacion', 'theme');
 $templatecontext['logounescimg'] = $OUTPUT->image_url('matcon/logo_unesco', 'theme');
+
+// MatCon Top Header Logo
+$templatecontext['logomatconimg'] = $OUTPUT->image_url('matcon/logo_matcon', 'theme');
