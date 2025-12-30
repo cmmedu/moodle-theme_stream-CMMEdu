@@ -541,3 +541,16 @@ $isticky: 0 !default;
 }
 // Fix drawerhead.
 .drawer.scrolled .drawerheader {box-shadow: none;}
+
+.drawer{
+    padding-top: 4.2rem;
+}
+
+// Ajustar posición del drawer toggler solo en pantallas medianas y grandes
+@include media-breakpoint-up(md) {
+    .drawer-toggles .drawer-toggler {
+        margin-top: calc(64px + 0.8rem) !important;
+        z-index: 1015;
+    }
+}
+    
