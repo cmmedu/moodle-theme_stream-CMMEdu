@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999; // Very high z-index to ensure it's on top
+    z-index: 1045; // Very high z-index to ensure it's on top
     background-color: $color-matcon-purple;
     background-color: #423475; // Fallback direct color
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
