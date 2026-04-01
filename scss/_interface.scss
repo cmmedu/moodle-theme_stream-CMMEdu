@@ -46,6 +46,23 @@ table {
 }
 
 // Footer
+// Keep footer at the bottom on short-content pages.
+#page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    > #page {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        > #topofscroll {
+            flex: 1 0 auto;
+        }
+    }
+}
+
 @include media-breakpoint-up(md) {
     .pagelayout-standard,
     body.limitedwidth {
