@@ -24,8 +24,6 @@
 
 namespace theme_stream\output;
 
-use html_writer;
-
 /**
  * Override Mod Quiz renderer
  *
@@ -41,6 +39,7 @@ class mod_quiz_renderer extends \mod_quiz\output\renderer {
      * @return string
      */
     public function during_attempt_tertiary_nav($quizviewurl): string {
+        $this->page->requires->js_call_amd('theme_stream/quizpagenav', 'init');
         return '';
     }
 }

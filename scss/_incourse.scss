@@ -30,3 +30,32 @@
         height: 28px;
     }
 }
+
+.stream-quiz-page-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .35rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding: .15rem 0;
+    // Evita que un padre con overflow recorte el borde superior.
+    margin-top: .25rem;
+
+    .nav-link {
+        flex-shrink: 0;
+        white-space: nowrap;
+        border: 1px solid $gray-300;
+        border-radius: .4rem;
+        text-align: center;
+        font-weight: 600;
+        padding: .4rem .75rem;
+    }
+
+    .nav-link.active {
+        border-color: $primary;
+    }
+}
